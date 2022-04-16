@@ -6,6 +6,7 @@ Code compiled from https://github.com/mk270/whitakers-words
 
 
 Hosted on Heroku, for use by the Erica Corral Apps
+
 Code used by permission of the original author.
 
 ## License
