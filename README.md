@@ -5,7 +5,8 @@ A web API code repo for my Whitakers project.
 Code compiled from https://github.com/mk270/whitakers-words
 
 
-Hosted on Heroku, for use by the beautiful coffee practice apps.
+Hosted on Heroku, for use by the Erica Corral Apps
+Code used by permission of the original author.
 
 ## License
 WORDS, a Latin dictionary, by Colonel William Whitaker (USAF, Retired)
