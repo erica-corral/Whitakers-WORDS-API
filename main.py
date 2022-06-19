@@ -36,3 +36,4 @@ async def english_to_latin(english_word):
         <body>
             <p style = "white-space: pre-line; white-space: pre">{definition}</p>
         </body>
+""".format(definition = definition)
