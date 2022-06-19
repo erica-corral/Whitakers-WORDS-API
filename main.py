@@ -28,6 +28,7 @@ async def read_items(latin_word):
 
 @app.get("/translate-english/{english_word}", response_class=HTMLResponse)
 async def english_to_latin(english_word):
+    #it is necessary to do all this changing directory magic, because if you try to run the 1.97 from an absolute path from the top-level directory, for some reason, the wrong definition returns
     os.chdir("./whitakers-words-1.97")
     print(os.getcwd())
     definition = subprocess.check_output("./words ~e " + english_word, shell=True).decode("utf-8")
