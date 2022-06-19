@@ -17,7 +17,31 @@ Hosted on Heroku, for use by the Erica Corral Apps
 Code used by permission of the original author.
 
 
-You may notice that English-to-Latin search on Erica Corral apps is severely impeded. This is an issue with the Whitaker's program itself, which appears to have become a bug in recent builds. This issue is being actively discussed at the source repository. See the discussion here: https://github.com/mk270/whitakers-words/issues/123. Unfortunately, as copies of Whitakers 1.97FC, which might have the correct English-Latin functioning don't compile correctly to include English dictionaries, or if they do, I have not been able to make them complie correctly, I am not able to host a separate build on the API to get better English-Latin support.
+You may notice there are two copies of whitakers words in the repository. This is because the latest build of Whitaker's Words is severely impeded in terms of English-to-Latin lookup. The current cause of the issue is not entirely clear, and is under active discussion at https://github.com/mk270/whitakers-words/issues/123. Therefore, for the English-to-Latin lookup, I have included a copy of the 1.97FC version of Whitakers, which has the English-to-Latin functionality working properly. This version was compiled from http://archives.nd.edu/whitaker/old/wordsdev.htm and is under the same license. Curious about how I compiled it for Ubuntu?
+  1. Install libgnat if necessary.
+  2. Download the source code from wordsall.zip (link on archives site)
+  3. Unzip wordsall.zip. Run:
+      gnatmake -O3 words
+      gnatmake makedict
+      gnatmake makestem
+      gnatmake makeefil
+      gnatmake makeinfl
+  4. Then run:
+      ./makedict DICTLINE.GEN
+      ./makestem STEMLIST.GEN
+      ./makeefil EWDSLIST.GEN
+      ./makeinfl INFLECTS.LAT
+  5. Then run ./words. You can remove all files except:
+    DICTFILE.GEN
+    STEMFILE.GEN
+    INDXFILE.GEN
+    EWDSFILE.GEN
+    INFLECTS.SEC
+    ADDONS.LAT
+    INFLECTS.SEC
+    words
+
+    if you want to save space.
 
 
 
