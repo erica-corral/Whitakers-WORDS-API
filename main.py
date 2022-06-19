@@ -6,7 +6,6 @@ import os
 
 print("initializing API")
 os.system("chmod +x ./words")
-os.system("chmod +x ./whitakers-words-1.97/words")
 
 app = FastAPI()
 print("initialized")
