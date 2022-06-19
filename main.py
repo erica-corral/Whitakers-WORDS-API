@@ -29,6 +29,7 @@ async def read_items(latin_word):
 @app.get("/translate-english/{english_word}", response_class=HTMLResponse)
 async def english_to_latin(english_word):
     os.system("cd ./whitakers-words-1.97")
+    print(subprocess.check_output("ls -l", shell=True).decode("utf-8"))
     definition = subprocess.check_output("./words ~e " + english_word, shell=True).decode("utf-8")
     os.system("cd ..")
     print("ran eng-latin -> " +definition)
