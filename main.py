@@ -14,6 +14,7 @@ print("initialized")
 @app.get("/translate/{latin_word}", response_class=HTMLResponse)
 async def read_items(latin_word):
     definition = subprocess.check_output("./words " + latin_word, shell=True).decode("utf-8")
+    print("ran latin-eng -> " +definition)
     return """
     <html>
         <head>
@@ -28,6 +29,7 @@ async def read_items(latin_word):
 @app.get("/translate-english/{english_word}", response_class=HTMLResponse)
 async def english_to_latin(english_word):
     definition = subprocess.check_output("./whitakers-words-1.97/words ~e " + english_word, shell=True).decode("utf-8")
+    print("ran eng-latin -> " +definition)
     return """
     <html>
         <head>
