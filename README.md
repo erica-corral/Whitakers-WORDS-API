@@ -17,7 +17,7 @@ Hosted on Heroku, for use by the Erica Corral Apps
 Code used by permission of the original author.
 
 
-You may notice there are two copies of whitakers words in the repository. This is because the latest build of Whitaker's Words is severely impeded in terms of English-to-Latin lookup. The current cause of the issue is not entirely clear, and is under active discussion at https://github.com/mk270/whitakers-words/issues/123. Therefore, for the English-to-Latin lookup, I have included a copy of the 1.97FC version of Whitakers, which has the English-to-Latin functionality working properly. This version was compiled from http://archives.nd.edu/whitaker/old/wordsdev.htm and is under the same license. Curious about how I compiled it for Ubuntu?
+ENGLISH TO LATIN SUPPORT IS IN A SEPARATE API!!!! This is because the latest build of Whitaker's Words is severely impeded in terms of English-to-Latin lookup. The current cause of the issue is not entirely clear, and is under active discussion at https://github.com/mk270/whitakers-words/issues/123. Therefore, for the English-to-Latin lookup, I have included a copy of the 1.97FC version of Whitakers, which has the English-to-Latin functionality working properly. This version was compiled from http://archives.nd.edu/whitaker/old/wordsdev.htm and is under the same license. Curious about how I compiled it for Ubuntu?
   1. Install libgnat if necessary.
   2. Download the source code from wordsall.zip (link on archives site)
   3. Unzip wordsall.zip. Run:
